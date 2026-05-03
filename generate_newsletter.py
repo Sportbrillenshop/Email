@@ -30,7 +30,7 @@ from html import escape
 # Dat vind je zo: log in op Shopify → kijk in de browserbalk, bijv.:
 #   https://sportbrillenshop.myshopify.com/admin  →  sportbrillenshop.myshopify.com
 # ══════════════════════════════════════════════════════════════════════════════
-SHOPIFY_STORE   = "sportbrillenshop.myshopify.com"   # ← pas aan indien nodig
+SHOPIFY_STORE   = "sportbrillenshop-nl.myshopify.com"   # ← pas aan indien nodig
 SHOPIFY_TOKEN   = "00c46eb67d84c39374abfa3a376aceb7"
 KLAVIYO_API_KEY = "pk_RhiBQx_7f663cfac37833270c67bb3afe2d5fcbe5"
 
