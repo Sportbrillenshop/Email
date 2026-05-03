@@ -6,49 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Sportbrillenshop - Wekelijkse nieuwsbrief</title>
   <style>
-    /* ── Reset ── */
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; display: block; }
     body { margin: 0; padding: 0; background-color: #f0edf2; font-family: Arial, Helvetica, sans-serif; }
 
-    /* ── Verberg mobiel nav op desktop ── */
     .nav-mobile { display: none; max-height: 0; overflow: hidden; }
 
-    /* ════════════════════════════════════════
-       MOBIELE STIJLEN  (≤ 600px)
-       Werkt in: Apple Mail, Gmail app,
-       Samsung Mail, Outlook.com.
-       Outlook desktop negeert dit en toont
-       altijd de desktop-layout — dat is ok.
-    ════════════════════════════════════════ */
     @media only screen and (max-width: 600px) {
-
-      /* Container */
       .email-wrapper  { width: 100% !important; border-radius: 0 !important; }
-
-      /* ── Navigatie ── */
       .nav-desktop    { display: none !important; max-height: 0 !important; overflow: hidden !important; }
       .nav-mobile     { display: table-row !important; max-height: none !important; }
-
-      /* ── Topbalk ── */
       .topbar-text    { font-size: 12px !important; }
-
-      /* ── Hero ── */
       .hero-pad       { padding: 22px 16px 20px !important; }
       .hero-label     { font-size: 11px !important; }
       .hero-title     { font-size: 21px !important; line-height: 1.25 !important; }
       .hero-body      { font-size: 14px !important; }
       .hero-btn       { padding: 13px 24px !important; font-size: 14px !important; }
-
-      /* ── Sectie headers ── */
       .section-hd     { padding: 12px 16px !important; }
       .section-hd h2  { font-size: 15px !important; }
       .section-hd p   { font-size: 12px !important; }
-
-      /* ── Productrij: 3 kolommen → 1 kolom ──
-         Elke <td class="product-cell"> wordt een
-         full-width kaart, gestapeld onder elkaar. */
       .product-wrap   { padding: 8px 12px 16px !important; }
       .product-cell   {
         display: block !important;
@@ -58,11 +35,7 @@
         box-sizing: border-box !important;
       }
       .product-cell:last-child { border-bottom: none !important; }
-      .product-img    {
-        width: 70% !important;
-        max-width: 220px !important;
-        margin: 0 auto 14px !important;
-      }
+      .product-img    { width: 70% !important; max-width: 220px !important; margin: 0 auto 14px !important; }
       .product-name   { font-size: 15px !important; margin-bottom: 6px !important; }
       .product-price  { font-size: 17px !important; margin-bottom: 14px !important; }
       .product-btn    {
@@ -74,22 +47,15 @@
         font-size: 14px !important;
         box-sizing: border-box !important;
       }
-
-      /* ── Kortingscode ── */
       .discount-outer { padding: 20px 12px !important; }
       .discount-inner { padding: 20px 14px !important; }
       .discount-code  { font-size: 22px !important; letter-spacing: 2px !important; padding: 8px 14px !important; }
       .discount-body  { font-size: 13px !important; }
       .discount-btn   { padding: 13px 24px !important; font-size: 14px !important; }
-
-      /* ── Teamfoto ── */
       .team-pad       { padding: 24px 12px !important; }
       .team-photo     { width: 100% !important; border-radius: 6px !important; }
       .team-title     { font-size: 16px !important; }
-
-      /* ── Footer ── */
       .footer-pad     { padding: 22px 16px 20px !important; }
-      /* Social knoppen onder elkaar op mobiel */
       .social-cell    { display: block !important; padding: 5px 0 !important; }
       .social-btn     { display: block !important; width: 160px !important; margin: 0 auto !important;
                         text-align: center !important; padding: 10px 14px !important; }
@@ -99,6 +65,27 @@
 </head>
 <body>
 
+<!--
+╔══════════════════════════════════════════════════════════════╗
+║           WAT AANPASSEN ELKE WEEK — OVERZICHT               ║
+╠══════════════════════════════════════════════════════════════╣
+║  Gebruik Ctrl+F om snel naar een sectie te springen.        ║
+║                                                              ║
+║  [ AANKONDIGING ]  →  zoek op: AANKONDIGING                 ║
+║  [ INTRO ]         →  zoek op: INTRO TEKST                  ║
+║  [ SECTIE A ]      →  zoek op: SECTIE A TITEL               ║
+║  [ PRODUCT 1 ]     →  zoek op: PRODUCT 1                    ║
+║  [ PRODUCT 2 ]     →  zoek op: PRODUCT 2                    ║
+║  [ PRODUCT 3 ]     →  zoek op: PRODUCT 3                    ║
+║  [ KORTINGSCODE ]  →  zoek op: KORTINGSCODE                 ║
+║  [ SECTIE B ]      →  zoek op: SECTIE B TITEL               ║
+║  [ PRODUCT 4 ]     →  zoek op: PRODUCT 4                    ║
+║  [ PRODUCT 5 ]     →  zoek op: PRODUCT 5                    ║
+║  [ PRODUCT 6 ]     →  zoek op: PRODUCT 6                    ║
+║  [ TEAMFOTO ]      →  zoek op: TEAMFOTO (eenmalig)          ║
+╚══════════════════════════════════════════════════════════════╝
+-->
+
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f0edf2">
   <tr>
     <td align="center" style="padding: 20px 10px;">
@@ -107,9 +94,9 @@
              bgcolor="#ffffff" style="border-radius: 6px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.10);">
 
 
-        <!-- ══════════════════════════════════════
-             1. HEADER – Logo
-        ══════════════════════════════════════ -->
+        <!-- ════════════════════════════════════════════════
+             HEADER & NAVIGATIE  —  niet aanpassen
+        ════════════════════════════════════════════════ -->
         <tr>
           <td align="center" bgcolor="#ffffff" style="padding: 24px 30px 10px;">
             <a href="https://sportbrillenshop.nl" target="_blank">
@@ -122,194 +109,219 @@
           </td>
         </tr>
 
-        <!-- Desktop navigatie (verborgen op mobiel) -->
         <tr class="nav-desktop">
           <td align="center" bgcolor="#ffffff" style="padding: 4px 30px 14px;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <td style="padding: 0 14px;">
-                  <a href="https://sportbrillenshop.nl"
-                     style="color: #621979; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Homepage</a>
-                </td>
-                <td style="padding: 0 14px;">
-                  <a href="https://sportbrillenshop.nl/collections/lifestyle"
-                     style="color: #621979; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Lifestyle</a>
-                </td>
-                <td style="padding: 0 14px;">
-                  <a href="https://sportbrillenshop.nl/pages/over-ons"
-                     style="color: #621979; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Over ons</a>
-                </td>
-                <td style="padding: 0 14px;">
-                  <a href="https://sportbrillenshop.nl/pages/contact"
-                     style="color: #621979; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Contact</a>
-                </td>
+                <td style="padding: 0 14px;"><a href="https://sportbrillenshop.nl" style="color: #621979; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Homepage</a></td>
+                <td style="padding: 0 14px;"><a href="https://sportbrillenshop.nl/collections/lifestyle" style="color: #621979; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Lifestyle</a></td>
+                <td style="padding: 0 14px;"><a href="https://sportbrillenshop.nl/pages/over-ons" style="color: #621979; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Over ons</a></td>
+                <td style="padding: 0 14px;"><a href="https://sportbrillenshop.nl/pages/contact" style="color: #621979; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Contact</a></td>
               </tr>
             </table>
           </td>
         </tr>
 
-        <!-- Mobiele navigatie (1 rij, 3 gelijke kolommen, verborgen op desktop) -->
         <tr class="nav-mobile" style="display: none;">
           <td align="center" bgcolor="#ffffff" style="padding: 6px 12px 12px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <td width="32%" align="center" bgcolor="#f7f3f9"
-                    style="text-align: center; padding: 9px 4px; border-radius: 4px;">
-                  <a href="https://sportbrillenshop.nl"
-                     style="color: #621979; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">
-                    Homepage
-                  </a>
+                <td width="32%" align="center" bgcolor="#f7f3f9" style="text-align: center; padding: 9px 4px; border-radius: 4px;">
+                  <a href="https://sportbrillenshop.nl" style="color: #621979; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Homepage</a>
                 </td>
                 <td width="2%" style="font-size: 0; line-height: 0;">&nbsp;</td>
-                <td width="32%" align="center" bgcolor="#f7f3f9"
-                    style="text-align: center; padding: 9px 4px; border-radius: 4px;">
-                  <a href="https://sportbrillenshop.nl/collections/lifestyle"
-                     style="color: #621979; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">
-                    Lifestyle
-                  </a>
+                <td width="32%" align="center" bgcolor="#f7f3f9" style="text-align: center; padding: 9px 4px; border-radius: 4px;">
+                  <a href="https://sportbrillenshop.nl/collections/lifestyle" style="color: #621979; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Lifestyle</a>
                 </td>
                 <td width="2%" style="font-size: 0; line-height: 0;">&nbsp;</td>
-                <td width="32%" align="center" bgcolor="#f7f3f9"
-                    style="text-align: center; padding: 9px 4px; border-radius: 4px;">
-                  <a href="https://sportbrillenshop.nl/pages/contact"
-                     style="color: #621979; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">
-                    Contact
-                  </a>
+                <td width="32%" align="center" bgcolor="#f7f3f9" style="text-align: center; padding: 9px 4px; border-radius: 4px;">
+                  <a href="https://sportbrillenshop.nl/pages/contact" style="color: #621979; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;">Contact</a>
                 </td>
               </tr>
             </table>
           </td>
         </tr>
 
-        <!-- Paarse topbalk -->
+
+        <!-- ════════════════════════════════════════════════
+             AANKONDIGING  —  elke week aanpassen
+        ════════════════════════════════════════════════ -->
         <tr>
           <td bgcolor="#621979" style="padding: 13px 20px;">
             <p class="topbar-text" style="margin: 0; color: #ffffff; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-align: center;">
-              <!-- ✏️ AANPASSEN: Aankondiging van de week -->
+
               &#9733; Gratis verzending &bull; Uit voorraad leverbaar &bull; 4,92 beoordeeld &#9733;
+
             </p>
           </td>
         </tr>
 
 
-        <!-- ══════════════════════════════════════
-             2. HERO – Intro van de week
-        ══════════════════════════════════════ -->
+        <!-- ════════════════════════════════════════════════
+             INTRO TEKST  —  elke week aanpassen
+             ┌─────────────────────────────────────────┐
+             │ 1. Klein label boven de titel           │
+             │ 2. Hoofdtitel (grote tekst)             │
+             │ 3. Intro alinea                         │
+             │ 4. Link van de knop "Bekijk alles"      │
+             └─────────────────────────────────────────┘
+        ════════════════════════════════════════════════ -->
         <tr>
           <td class="hero-pad" align="center" bgcolor="#f7f3f9" style="padding: 36px 48px 28px;">
+
+            <!-- 1. Klein label -->
             <p class="hero-label" style="margin: 0 0 8px; color: #621979; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
-              <!-- ✏️ AANPASSEN: Bijv. "Nieuwe collectie" / "Weekaanbieding" -->
               Nieuwe collectie
             </p>
+
+            <!-- 2. Hoofdtitel -->
             <h1 class="hero-title" style="margin: 0 0 16px; color: #1a1a1a; font-size: 28px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.2;">
-              <!-- ✏️ AANPASSEN: Hoofdtitel -->
               De nieuwste Oakley brillen<br />zijn binnen!
             </h1>
+
+            <!-- 3. Intro alinea -->
             <p class="hero-body" style="margin: 0 0 24px; color: #555555; font-size: 15px; line-height: 1.6; font-family: Arial, Helvetica, sans-serif;">
-              <!-- ✏️ AANPASSEN: Intro tekst -->
               Ontdek de nieuwste sportbrillen die deze week zijn toegevoegd aan ons assortiment. Van wielrennen tot skiën – voor elke sport de perfecte bril.
             </p>
+
+            <!-- 4. Knop — pas de link aan -->
             <a class="hero-btn" href="https://sportbrillenshop.nl/collections/all"
                style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 14px 36px; border-radius: 5px;">
               Bekijk alles
             </a>
+
           </td>
         </tr>
 
 
-        <!-- ══════════════════════════════════════
-             3. SECTIE A – Sectieheader (paars)
-        ══════════════════════════════════════ -->
+        <!-- ════════════════════════════════════════════════
+             SECTIE A TITEL  —  elke week aanpassen
+             Bijv. "Zonnebrillen" / "Helmen" / "Kleding"
+        ════════════════════════════════════════════════ -->
         <tr>
           <td class="section-hd" bgcolor="#621979" style="padding: 14px 30px;">
             <h2 style="margin: 0; color: #ffffff; font-size: 17px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
-              <!-- ✏️ AANPASSEN: bijv. "Zonnebrillen" / "Helmen" / "Kleding" -->
               &#128274; Zonnebrillen
             </h2>
             <p style="margin: 4px 0 0; color: #e0c8e8; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">
-              <!-- ✏️ AANPASSEN of verwijder dit <p> -->
               Nieuw toegevoegd aan onze collectie
             </p>
           </td>
         </tr>
 
-        <!-- ── Productrij A – 3 kolommen (desktop) / gestapeld (mobiel) ──
-             HOE KLAVIYO PRODUCTBLOKKEN WERKEN:
-             1. Upload dit bestand via Klaviyo → Templates → Import HTML
-             2. Klik in de editor op een productfoto
-             3. Kies "Replace with Product Block"
-             4. Zoek het product op naam → foto, prijs en link worden
-                automatisch ingevuld vanuit je Shopify catalogus -->
+
+        <!-- ════════════════════════════════════════════════
+             PRODUCTEN 1 t/m 3  —  elke week aanpassen
+             Per product pas je 4 dingen aan:
+               A) Foto-URL  (src="...")
+               B) Productnaam
+               C) Prijs
+               D) Link      (href="...products/HANDLE")
+                  De handle staat in de Shopify URL van
+                  het product, bijv: oakley-flak-2-0-xl
+        ════════════════════════════════════════════════ -->
         <tr>
           <td class="product-wrap" bgcolor="#ffffff" style="padding: 20px 16px 28px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
 
-                <!-- SLOT-1-START -->
+                <!-- ┌──────────────────────────────────┐
+                     │         PRODUCT 1                │
+                     └──────────────────────────────────┘ -->
                 <td class="product-cell" width="33%" align="center" valign="top" style="padding: 0 8px;">
-                  <a href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-1" target="_blank">
+
+                  <!-- A) FOTO — vervang de src -->
+                  <a href="https://sportbrillenshop.nl/products/product-handle-1" target="_blank">
                     <img class="product-img"
-                      src="https://via.placeholder.com/160x130/f7f3f9/621979?text=Product+1"
+                      src="https://via.placeholder.com/160x130/f7f3f9/621979?text=Foto+1"
                       width="160" alt="Product 1"
                       style="width: 160px; max-width: 100%; border-radius: 6px; margin: 0 auto 12px;"
                     />
                   </a>
+
+                  <!-- B) NAAM — vervang de tekst -->
                   <p class="product-name" style="margin: 0 0 4px; color: #1a1a1a; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.4;">
                     Productnaam<br />Variant / Kleur
                   </p>
+
+                  <!-- C) PRIJS — vervang het bedrag -->
                   <p class="product-price" style="margin: 0 0 12px; color: #621979; font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
                     &euro; 000,00
                   </p>
-                  <a class="product-btn" href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-1"
+
+                  <!-- D) LINK — vervang product-handle-1 -->
+                  <a class="product-btn" href="https://sportbrillenshop.nl/products/product-handle-1"
                      style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">
                     Nu shoppen
                   </a>
-                </td>
-                <!-- SLOT-1-END -->
 
-                <!-- SLOT-2-START -->
+                </td>
+
+
+                <!-- ┌──────────────────────────────────┐
+                     │         PRODUCT 2                │
+                     └──────────────────────────────────┘ -->
                 <td class="product-cell" width="33%" align="center" valign="top" style="padding: 0 8px;">
-                  <a href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-2" target="_blank">
+
+                  <!-- A) FOTO -->
+                  <a href="https://sportbrillenshop.nl/products/product-handle-2" target="_blank">
                     <img class="product-img"
-                      src="https://via.placeholder.com/160x130/f7f3f9/621979?text=Product+2"
+                      src="https://via.placeholder.com/160x130/f7f3f9/621979?text=Foto+2"
                       width="160" alt="Product 2"
                       style="width: 160px; max-width: 100%; border-radius: 6px; margin: 0 auto 12px;"
                     />
                   </a>
+
+                  <!-- B) NAAM -->
                   <p class="product-name" style="margin: 0 0 4px; color: #1a1a1a; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.4;">
                     Productnaam<br />Variant / Kleur
                   </p>
+
+                  <!-- C) PRIJS -->
                   <p class="product-price" style="margin: 0 0 12px; color: #621979; font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
                     &euro; 000,00
                   </p>
-                  <a class="product-btn" href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-2"
+
+                  <!-- D) LINK -->
+                  <a class="product-btn" href="https://sportbrillenshop.nl/products/product-handle-2"
                      style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">
                     Nu shoppen
                   </a>
-                </td>
-                <!-- SLOT-2-END -->
 
-                <!-- SLOT-3-START -->
+                </td>
+
+
+                <!-- ┌──────────────────────────────────┐
+                     │         PRODUCT 3                │
+                     └──────────────────────────────────┘ -->
                 <td class="product-cell" width="33%" align="center" valign="top" style="padding: 0 8px;">
-                  <a href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-3" target="_blank">
+
+                  <!-- A) FOTO -->
+                  <a href="https://sportbrillenshop.nl/products/product-handle-3" target="_blank">
                     <img class="product-img"
-                      src="https://via.placeholder.com/160x130/f7f3f9/621979?text=Product+3"
+                      src="https://via.placeholder.com/160x130/f7f3f9/621979?text=Foto+3"
                       width="160" alt="Product 3"
                       style="width: 160px; max-width: 100%; border-radius: 6px; margin: 0 auto 12px;"
                     />
                   </a>
+
+                  <!-- B) NAAM -->
                   <p class="product-name" style="margin: 0 0 4px; color: #1a1a1a; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.4;">
                     Productnaam<br />Variant / Kleur
                   </p>
+
+                  <!-- C) PRIJS -->
                   <p class="product-price" style="margin: 0 0 12px; color: #621979; font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
                     &euro; 000,00
                   </p>
-                  <a class="product-btn" href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-3"
+
+                  <!-- D) LINK -->
+                  <a class="product-btn" href="https://sportbrillenshop.nl/products/product-handle-3"
                      style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">
                     Nu shoppen
                   </a>
+
                 </td>
-                <!-- SLOT-3-END -->
 
               </tr>
             </table>
@@ -317,11 +329,11 @@
         </tr>
 
 
-        <!-- ══════════════════════════════════════
-             4. KORTINGSCODE (optioneel)
-             Verwijder dit blok als er geen
-             kortingscode is deze week.
-        ══════════════════════════════════════ -->
+        <!-- ════════════════════════════════════════════════
+             KORTINGSCODE  —  optioneel, elke week
+             Verwijder dit hele blok als je geen
+             kortingscode wilt in de mail.
+        ════════════════════════════════════════════════ -->
         <tr>
           <td class="discount-outer" bgcolor="#f7f3f9" style="padding: 30px 40px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
@@ -331,15 +343,18 @@
                   <p style="margin: 0 0 4px; color: #621979; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
                     Exclusieve kortingscode
                   </p>
+
+                  <!-- De code zelf -->
                   <p class="discount-code" style="margin: 12px auto; color: #1a1a1a; font-size: 28px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; letter-spacing: 4px; background-color: #f7f3f9; padding: 10px 20px; border-radius: 4px; display: inline-block;">
-                    <!-- ✏️ AANPASSEN: Kortingscode -->
-                    WEEK18-5PCT
+                    JOUWCODE
                   </p>
+
+                  <!-- Omschrijving & geldigheid -->
                   <p class="discount-body" style="margin: 0 0 18px; color: #555555; font-size: 14px; font-family: Arial, Helvetica, sans-serif; line-height: 1.6;">
-                    <!-- ✏️ AANPASSEN: Omschrijving & geldigheid -->
                     Gebruik deze code voor <strong>5% korting</strong> op je bestelling.<br />
-                    Geldig t/m <strong>08-05-2026</strong>. Niet cumuleerbaar met andere acties.
+                    Geldig t/m <strong>DD-MM-JJJJ</strong>. Niet cumuleerbaar met andere acties.
                   </p>
+
                   <a class="discount-btn" href="https://sportbrillenshop.nl/collections/all"
                      style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 13px 30px; border-radius: 5px;">
                     Nu shoppen
@@ -351,16 +366,13 @@
         </tr>
 
 
-        <!-- ══════════════════════════════════════
-             5. SECTIE B (optioneel)
-             Kopieer de sectieheader + productrij
-             hierboven voor een extra categorie.
-             Verwijder als niet nodig.
-        ══════════════════════════════════════ -->
+        <!-- ════════════════════════════════════════════════
+             SECTIE B TITEL  —  elke week aanpassen
+             Bijv. "Helmen" / "Kleding" / "Aanbevolen"
+        ════════════════════════════════════════════════ -->
         <tr>
           <td class="section-hd" bgcolor="#1a1a1a" style="padding: 14px 30px;">
             <h2 style="margin: 0; color: #ffffff; font-size: 17px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
-              <!-- ✏️ AANPASSEN: bijv. "Helmen" / "Kleding" -->
               &#127941; Aanbevolen
             </h2>
             <p style="margin: 4px 0 0; color: #aaaaaa; font-size: 13px; font-family: Arial, Helvetica, sans-serif;">
@@ -369,76 +381,114 @@
           </td>
         </tr>
 
+
+        <!-- ════════════════════════════════════════════════
+             PRODUCTEN 4 t/m 6  —  elke week aanpassen
+             Zelfde aanpak als producten 1 t/m 3:
+               A) Foto-URL   B) Naam   C) Prijs   D) Link
+        ════════════════════════════════════════════════ -->
         <tr>
           <td class="product-wrap" bgcolor="#ffffff" style="padding: 20px 16px 28px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
 
-                <!-- SLOT-4-START -->
+                <!-- ┌──────────────────────────────────┐
+                     │         PRODUCT 4                │
+                     └──────────────────────────────────┘ -->
                 <td class="product-cell" width="33%" align="center" valign="top" style="padding: 0 8px;">
-                  <a href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-4" target="_blank">
+
+                  <!-- A) FOTO -->
+                  <a href="https://sportbrillenshop.nl/products/product-handle-4" target="_blank">
                     <img class="product-img"
-                      src="https://via.placeholder.com/160x130/1a1a1a/ffffff?text=Product+4"
+                      src="https://via.placeholder.com/160x130/1a1a1a/ffffff?text=Foto+4"
                       width="160" alt="Product 4"
                       style="width: 160px; max-width: 100%; border-radius: 6px; margin: 0 auto 12px;"
                     />
                   </a>
+
+                  <!-- B) NAAM -->
                   <p class="product-name" style="margin: 0 0 4px; color: #1a1a1a; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.4;">
                     Productnaam<br />Variant / Kleur
                   </p>
+
+                  <!-- C) PRIJS -->
                   <p class="product-price" style="margin: 0 0 12px; color: #621979; font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
                     &euro; 000,00
                   </p>
-                  <a class="product-btn" href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-4"
+
+                  <!-- D) LINK -->
+                  <a class="product-btn" href="https://sportbrillenshop.nl/products/product-handle-4"
                      style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">
                     Nu shoppen
                   </a>
-                </td>
-                <!-- SLOT-4-END -->
 
-                <!-- SLOT-5-START -->
+                </td>
+
+
+                <!-- ┌──────────────────────────────────┐
+                     │         PRODUCT 5                │
+                     └──────────────────────────────────┘ -->
                 <td class="product-cell" width="33%" align="center" valign="top" style="padding: 0 8px;">
-                  <a href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-5" target="_blank">
+
+                  <!-- A) FOTO -->
+                  <a href="https://sportbrillenshop.nl/products/product-handle-5" target="_blank">
                     <img class="product-img"
-                      src="https://via.placeholder.com/160x130/1a1a1a/ffffff?text=Product+5"
+                      src="https://via.placeholder.com/160x130/1a1a1a/ffffff?text=Foto+5"
                       width="160" alt="Product 5"
                       style="width: 160px; max-width: 100%; border-radius: 6px; margin: 0 auto 12px;"
                     />
                   </a>
+
+                  <!-- B) NAAM -->
                   <p class="product-name" style="margin: 0 0 4px; color: #1a1a1a; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.4;">
                     Productnaam<br />Variant / Kleur
                   </p>
+
+                  <!-- C) PRIJS -->
                   <p class="product-price" style="margin: 0 0 12px; color: #621979; font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
                     &euro; 000,00
                   </p>
-                  <a class="product-btn" href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-5"
+
+                  <!-- D) LINK -->
+                  <a class="product-btn" href="https://sportbrillenshop.nl/products/product-handle-5"
                      style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">
                     Nu shoppen
                   </a>
-                </td>
-                <!-- SLOT-5-END -->
 
-                <!-- SLOT-6-START -->
+                </td>
+
+
+                <!-- ┌──────────────────────────────────┐
+                     │         PRODUCT 6                │
+                     └──────────────────────────────────┘ -->
                 <td class="product-cell" width="33%" align="center" valign="top" style="padding: 0 8px;">
-                  <a href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-6" target="_blank">
+
+                  <!-- A) FOTO -->
+                  <a href="https://sportbrillenshop.nl/products/product-handle-6" target="_blank">
                     <img class="product-img"
-                      src="https://via.placeholder.com/160x130/1a1a1a/ffffff?text=Product+6"
+                      src="https://via.placeholder.com/160x130/1a1a1a/ffffff?text=Foto+6"
                       width="160" alt="Product 6"
                       style="width: 160px; max-width: 100%; border-radius: 6px; margin: 0 auto 12px;"
                     />
                   </a>
+
+                  <!-- B) NAAM -->
                   <p class="product-name" style="margin: 0 0 4px; color: #1a1a1a; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1.4;">
                     Productnaam<br />Variant / Kleur
                   </p>
+
+                  <!-- C) PRIJS -->
                   <p class="product-price" style="margin: 0 0 12px; color: #621979; font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
                     &euro; 000,00
                   </p>
-                  <a class="product-btn" href="https://sportbrillenshop.nl/products/PRODUCT-HANDLE-6"
+
+                  <!-- D) LINK -->
+                  <a class="product-btn" href="https://sportbrillenshop.nl/products/product-handle-6"
                      style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">
                     Nu shoppen
                   </a>
+
                 </td>
-                <!-- SLOT-6-END -->
 
               </tr>
             </table>
@@ -446,23 +496,20 @@
         </tr>
 
 
-        <!-- ══════════════════════════════════════
-             6. TEAMFOTO
-        ══════════════════════════════════════ -->
+        <!-- ════════════════════════════════════════════════
+             TEAMFOTO  —  eenmalig instellen
+             1. Ga naar Klaviyo → Content → Images → Upload
+             2. Upload de teamfoto
+             3. Kopieer de URL die Klaviyo geeft
+             4. Vervang de src hieronder door die URL
+        ════════════════════════════════════════════════ -->
         <tr>
           <td class="team-pad" bgcolor="#621979" style="padding: 32px 40px; text-align: center;">
             <p class="team-title" style="margin: 0 0 16px; color: #ffffff; font-size: 18px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
               Het team van Sportbrillenshop
             </p>
-            <!--
-              ✏️ HOE DE TEAMFOTO UPLOADEN:
-              1. Ga naar Klaviyo → Content → Images → Upload
-              2. Upload de teamfoto (bijv. oakley-team.jpg)
-              3. Kopieer de gegenereerde URL
-              4. Vervang de src hieronder door die URL
-            -->
             <img class="team-photo"
-              src="https://via.placeholder.com/520x340/ffffff/621979?text=Upload+teamfoto+via+Klaviyo+Images"
+              src="https://via.placeholder.com/520x340/ffffff/621979?text=Teamfoto+hier"
               width="520" alt="Het team van Sportbrillenshop"
               style="max-width: 100%; border-radius: 8px; border: 4px solid #ffffff; margin: 0 auto;"
             />
@@ -473,56 +520,37 @@
         </tr>
 
 
-        <!-- ══════════════════════════════════════
-             7. FOOTER
-        ══════════════════════════════════════ -->
+        <!-- ════════════════════════════════════════════════
+             FOOTER  —  niet aanpassen
+        ════════════════════════════════════════════════ -->
         <tr>
           <td class="footer-pad" bgcolor="#111111" style="padding: 28px 40px 24px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-
-              <!-- Volg ons label -->
               <tr>
                 <td align="center" style="padding-bottom: 10px;">
-                  <p style="margin: 0; color: #aaaaaa; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 1px;">
-                    Volg ons
-                  </p>
+                  <p style="margin: 0; color: #aaaaaa; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 1px;">Volg ons</p>
                 </td>
               </tr>
-
-              <!-- Social knoppen (naast elkaar op desktop, gestapeld op mobiel) -->
               <tr>
                 <td align="center" style="padding-bottom: 20px;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
                     <tr>
                       <td class="social-cell" style="padding: 0 6px;">
-                        <a class="social-btn" href="https://www.instagram.com/sportbrillenshop/"
-                           style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">
-                          Instagram
-                        </a>
+                        <a class="social-btn" href="https://www.instagram.com/sportbrillenshop/" style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">Instagram</a>
                       </td>
                       <td class="social-cell" style="padding: 0 6px;">
-                        <a class="social-btn" href="https://www.facebook.com/sportbrillenshop"
-                           style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">
-                          Facebook
-                        </a>
+                        <a class="social-btn" href="https://www.facebook.com/sportbrillenshop" style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">Facebook</a>
                       </td>
                       <td class="social-cell" style="padding: 0 6px;">
-                        <a class="social-btn" href="https://www.tiktok.com/@sportbrillenshop"
-                           style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">
-                          TikTok
-                        </a>
+                        <a class="social-btn" href="https://www.tiktok.com/@sportbrillenshop" style="display: inline-block; background-color: #621979; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: none; padding: 9px 18px; border-radius: 4px;">TikTok</a>
                       </td>
                     </tr>
                   </table>
                 </td>
               </tr>
-
-              <!-- Divider -->
               <tr>
                 <td bgcolor="#333333" height="1" style="font-size: 0; line-height: 0;">&nbsp;</td>
               </tr>
-
-              <!-- Contactgegevens -->
               <tr>
                 <td align="center" style="padding: 18px 0 0;">
                   <p class="footer-text" style="margin: 0; color: #aaaaaa; font-size: 12px; line-height: 1.8; font-family: Arial, Helvetica, sans-serif;">
@@ -538,13 +566,11 @@
                   </p>
                 </td>
               </tr>
-
             </table>
           </td>
         </tr>
 
       </table>
-
     </td>
   </tr>
 </table>
